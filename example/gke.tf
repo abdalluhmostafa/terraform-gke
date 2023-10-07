@@ -1,9 +1,10 @@
 module "gke_cluster" {
-  source      = "../gke-module/"
-  project  = "your_project_id"
-  region      = "us-central1"
-  cluster_name = "your_cluster_name"
-  node_pool_name = "your_node_pool_name"
-  node_pool_size = 3
-  machine_type = "n1-standard-2"
+  source         = "../gke-module/"
+  project        = "sprints-lab"
+  region         = "us-central1"
+  cluster_name   = "terraform-gke"
+  node_pool_name = "dev"
+  node_pool_size = 1
+  machine_type   = "e2-medium"
+  disk_size_gb   = 30
 }

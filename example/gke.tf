@@ -1,7 +1,7 @@
 module "gke_cluster" {
   source         = "../gke-module/"
   project        = "sprints-lab"
-  region         = "us-central1"
+  region         = "us-central1-c"
   cluster_name   = "terraform-gke"
   node_pool_name = "dev"
   node_pool_size = 1

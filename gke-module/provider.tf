@@ -1,6 +1,5 @@
 terraform {
   required_version = ">= 0.13"
-
   required_providers {
     kubectl = {
       source  = "gavinbunney/kubectl"
@@ -10,5 +9,5 @@ terraform {
 }
 provider "google" {
   project = var.project
-  region = var.region
+  region  = var.region
 }

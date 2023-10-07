@@ -24,3 +24,8 @@ variable "machine_type" {
   description = "GKE node machine type"
   default     = "n1-standard-2"
 }
+
+variable "disk_size_gb" {
+  description = "Node pool machine disk size"
+  default     = 30
+}
